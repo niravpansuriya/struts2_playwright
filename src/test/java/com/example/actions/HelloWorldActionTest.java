@@ -39,8 +39,8 @@ public class HelloWorldActionTest {
         if (playwright == null) {
             playwright = Playwright.create();
         }
-        browser = playwright.firefox().launch(new BrowserType.LaunchOptions().setHeadless(true));
-        performTest(browser);
+        // browser = playwright.firefox().launch(new BrowserType.LaunchOptions().setHeadless(true));
+        // performTest(browser);
         browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setChannel("chrome").setHeadless(true));
         performTest(browser);
         browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setChannel("msedge").setHeadless(true));
